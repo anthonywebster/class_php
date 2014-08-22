@@ -1,7 +1,12 @@
 <?php 
+
+	interface SomeInterface {
+		public function sayFoo();
+	}
 	
 	trait Foo 
 	{
+		private $field = 'some';
 		public function sayFoo()
 		{
 			return "I'm saying foo from trait foo!";
